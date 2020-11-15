@@ -1,0 +1,64 @@
+{
+    "localeCode" : "cym",
+    "authors" : ["Raith"],
+    "messages" : 
+    {
+        "General.OK" : "IAWN",
+        "General.Cancel" : "Canslo",
+        "General.Continue" : "Barhau",
+        "General.Next" : "Nesaf",
+        "General.Back" : "ôl",
+        "General.Confirm" : "Cadarnhau?",
+        "General.Loading" : "Llwytho...",
+        "General.Processing" : "Prosesu...",
+        "General.FAILED" : "METHU",
+        "General.Reset" : "Ail gychwyn",
+        "General.WorldOpenConfirm" : "Agored yn sicr?",
+        "General.Saved" : "Gadwedig!",
+        "General.Done" : "Wedi'i wneud!",
+        "General.CopiedToClipboard" : "Copïwyd!",
+        "General.CopiedToClipboardLong" : "Copïwyd i'r clipfwrdd!",
+
+        "General.UI.SearchPrompt" : "Chwilio...",
+        "General.UI.SearchPromptLong" : "Teipiwch i chwilio...",
+
+        "General.Sort.Ascending" : "Esgynnol",
+        "General.Sort.Descending" : "Disgynnol",
+
+        "Locomotion.Noclip.Name" : "Ysbryd",
+        "Locomotion.Noclip.Description" : "Modd ysbryd yn hedfan, i'w olygu",
+        "Locomotion.Teleport.Name" : "Cludiant",
+        "Locomotion.Teleport.Description" : "Yn defnyddio cludiant llwybr balistig, ar gyfer symud yn gyffyrddus.",
+        "Locomotion.Fly.Name" : "Plu",
+        "Locomotion.Fly.Description" : "Modd Plu Corfforol",
+        "Locomotion.WalkRun.Name" : "Cerdded/Rhedeg",
+        "Locomotion.WalkRun.Description" : "Cerdded corfforol, rhedeg a neidio.",
+        "Locomotion.WalkRunGripping.Name" : "Cerdded/Rhedeg (gyda dringo)",
+        "Locomotion.WalkRunGripping.Description" : "Cerdded corfforol, rhedeg a neidio a dringo.",
+        "Locomotion.ZeroG.Name" : "Sero-D",
+        "Locomotion.ZeroG.Description" : "Locomotif corfforol di-bwysau",
+        "Locomotion.GrabWorld.Name" : "Cydio Byd",
+        "Locomotion.GrabWorld.Description" : "Yn creu angor byd gyda'r cyfeirnod ac yn symud y defnyddiwr mewn perthynas ag ef.",
+        "Locomotion.Slide.Name" : "Sleid",
+        "Locomotion.Slide.Description" : "Symudiad Sidde Syml, snapiau i'r wyneb os yw'n bresennol, gan hedfan fel arall",
+
+        "Interaction.Destroy" : "Dinistrio",
+        "Interaction.Duplicate" : "Dyblyg",
+        "Interaction.Undo" : "Dadwneud",
+        "Interaction.Redo" : "Ail-wneud",
+        "Interaction.EquipTool" : "Cyfarparu",
+        "Interaction.DequipTool" : "Heb Cyfarparu",
+        "Interaction.ScalingEnabled" : "Graddfa Galluogedig",
+        "Interaction.ScalingDisabled" : "Anabl Graddfa",
+        "Interaction.ResetScale" : "Graddfa Ailosod",
+        "Interaction.LaserEnabled" : "Laser Galluogedig",
+        "Interaction.LaserDisabled" : "Laser Anabl",
+        "Interaction.Locomotion" : "Ymsymudiad",
+        "Interaction.Locomotion.None" : "Dim",
+
+        "Interaction.NamedEquipTool" : "Cyfarparu {enw}",
+        "Interaction.NamedEquipTool.Default" : "Offeryn",
+
+        "Dummy" : "Dummy"
+    }
+}
