@@ -2,28 +2,28 @@
 This repository contains the locale assets for the core UI of Neos VR (www.neos.com) and allow anyone to contribute translations. The contents of this repository will be periodically merged with the public build released on Steam (https://store.steampowered.com/app/740250/Neos_VR/) and other platforms.
 
 # Localization Status
-Czech [cs] - 97.5% - Missing keys: 25  
-German [de] - 96.7% - Missing keys: 33  
-English (United Kingdom) [en-gb] - 1.8% - Missing keys: 984  
+Czech [cs] - 100.0% - Missing keys: 0  
+German [de] - 99.0% - Missing keys: 11  
+English (United Kingdom) [en-gb] - 2.9% - Missing keys: 1056  
 English [en] - 100.0% - Missing keys: 0  
-Esperanto [eo] - 97.5% - Missing keys: 25  
-Spanish [es] - 92.3% - Missing keys: 77  
-Estonian [et] - 84.8% - Missing keys: 152  
-Finnish [fi] - 40.5% - Missing keys: 596  
-French [fr] - 84.8% - Missing keys: 152  
-Icelandic [is] - 35.2% - Missing keys: 649  
-Japanese [ja] - 97.5% - Missing keys: 25  
-Korean [ko] - 94.4% - Missing keys: 56  
-Dutch [nl] - 91.6% - Missing keys: 84  
-Norwegian [no] - 82.7% - Missing keys: 173  
-Polish [pl] - 97.5% - Missing keys: 25  
-Russian [ru] - 97.5% - Missing keys: 25  
-Swedish [sv] - 4.9% - Missing keys: 953  
-Turkish [tr] - 97.7% - Missing keys: 23  
-Chinese (China) [zh-cn] - 97.5% - Missing keys: 25  
-Chinese (Taiwan) [zh-tw] - 97.5% - Missing keys: 25  
+Esperanto [eo] - 100.0% - Missing keys: 0  
+Spanish [es] - 99.6% - Missing keys: 4  
+Estonian [et] - 77.3% - Missing keys: 247  
+Finnish [fi] - 37.4% - Missing keys: 681  
+French [fr] - 100.0% - Missing keys: 0  
+Icelandic [is] - 32.5% - Missing keys: 734  
+Japanese [ja] - 100.0% - Missing keys: 0  
+Korean [ko] - 100.0% - Missing keys: 0  
+Dutch [nl] - 92.4% - Missing keys: 83  
+Norwegian [no] - 75.3% - Missing keys: 268  
+Polish [pl] - 100.0% - Missing keys: 0  
+Russian [ru] - 100.0% - Missing keys: 0  
+Swedish [sv] - 6.6% - Missing keys: 1015  
+Turkish [tr] - 88.8% - Missing keys: 122  
+Chinese (China) [zh-cn] - 100.0% - Missing keys: 0  
+Chinese (Taiwan) [zh-tw] - 100.0% - Missing keys: 0  
 
-Total keys: 1002
+Total keys: 1087
 
 # How To Contribute
 If you'd like to contribute translations, create a branch of fork of the repository, make the changes and once they are ready to be merged create a Pull Request, so the contributions can be checked and merged. You don't need to translate everything at once, if you cover part of the UI, the changes can be merged, with more translations coming later.
@@ -38,6 +38,12 @@ If you'd like to contribute translations, create a branch of fork of the reposit
 - DON'T update the Localization Status section of this document, it is automatically generated when changes are merged
 - DON'T update the MISSING.md file manually, it's automatically generated as part of the build process based on the changes you submit
 - DON'T convert the formatting of the entire document. This creates major merge conflicts and makes it hard to track what was actually changed, plus it introduces inconsistencies
+- DON'T correct mistakes in the string keys, only report them. They will be fixed by a script, which will apply the correction to all locales at once.
+
+# Translating the Store descriptions
+If you're like, you can help translate the store descriptions as well (this is used on Steam for example), but we consider those highly optional since it's quite a lot of text. If you don't want to translate those, don't worry about them! The store descriptions do not count towards the translation completeness percerntage and are provided in separate files.
+
+If you do translate them and you haven't added a credit yet, put your name in the regular .json file for translations of in-game strings, even if you haven't translated any in-game strings.
 
 # If you're contributing a new language
 1) Create a new Issue (https://github.com/Frooxius/NeosLocale/issues) for given language in format "Language [lang-code]", for example "English [en]", which will help coordinate efforts of different translators.
@@ -113,6 +119,23 @@ Currently there are a few known parts that cannot be translated, but are planned
 - Component names and categories (component names will still show original for technical reasons, but will show optional translation for non-English languages)
 - LogiX node names and categories (same as above)
 - Component fields (those will only show optional translated names on hover once tooltip system is implemented)
+
+# If you use an external tool to do the translation and the JSON structure is mangled
+You can use the python script in this repository: CleanJSON.py
+
+For example to clean the french json, `./CleanJSON.py --en en.json --lang fr.json --out fr.json.cleaned`
+
+```usage: CleanJSON.py [-h] [--en en_path] [--lang lang_path] [--out out_path]
+
+This script will reformat a Babel style JSON for locales to match the en.json
+baseline formating for git changes purposes.
+
+optional arguments:
+  -h, --help        show this help message and exit
+  --en en_path      The path to the en.json Neos locale.
+  --lang lang_path  The path to the LANG.json Neos locale to clean.
+  --out out_path    The path to save the formated file.
+```
 
 # Any questions?
 If you have questions or are unsure about something, you can create an Issue on this repository or reach out to our team on the official Discord: https://discord.gg/neosvr
