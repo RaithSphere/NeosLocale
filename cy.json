@@ -56,7 +56,7 @@
         "Interaction.Locomotion" : "Ymsymudiad",
         "Interaction.Locomotion.None" : "Dim",
 
-        "Interaction.NamedEquipTool" : "Cyfarparu {enw}",
+        "Interaction.NamedEquipTool" : "Cyfarparu {name}",
         "Interaction.NamedEquipTool.Default" : "Offeryn",
 
         "Dummy" : "Dummy"
